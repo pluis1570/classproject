@@ -9,7 +9,7 @@ function renderPlace(Place){
 }
 function renderPlaces(Places){
     return crel ('div',
-    'Places.map'(renderPlace))
+    'renderPlace')
 }
 module.exports = renderPlaces
 
