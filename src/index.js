@@ -6,8 +6,9 @@ require ('./index.css')
 tabletop.init({
   key: 'https://docs.google.com/spreadsheets/d/19c5VxyfV5P3-4jUwramk5fiyFLm4IPGqqLqo8_6f7-o/pubhtml',
 callback: function (tabletopData, tabletop) {
-  var renderedPlaces = render(tabletopData)
-  console.log(renderedPlaces)
+  var renderPlaces = render(tabletopData)
+
+  document.body.appendChild(render(tabletopData))
 },
    
   simpleSheet: true
