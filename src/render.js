@@ -34,18 +34,11 @@ function renderPlace(place){
     )
 }
 function renderPlaces (places){
-    return crel ('div',
-    'renderPlace')
+    return crel ('div',places.map(renderPlace))
 }
 module.exports = renderPlaces
 
 /*
 
-varriablen voor tabeltop zijn niet correct . ik krijg mijn DIv met elementen te zien .  maar eenmaal ik date erin steek  worden dezen niet weer gegeven.
-nav wat zitten kijken wat ik kon veranderen van namen , zonder succes
 
-"renderPlaces blijft niet herkend"
-
-
-na het improteren van componenten is "place" niet defined 
 */
