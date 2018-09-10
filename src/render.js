@@ -1,5 +1,5 @@
 var crel = require('crel')
-
+/*
 function renderHeader() {
     return crel('h1', place.area)
 }
@@ -24,8 +24,7 @@ function renderApp(places) {
    renderPlaces(places),
    renderFooter())
 }
-module.exports = renderApp
-/*
+module.exports = renderApp*/
 
 function renderPlace(place){
     return crel('div',
@@ -34,13 +33,13 @@ function renderPlace(place){
     crel('p', place.information)
     )
 }
-function renderPlaces (place){
+function renderPlaces (places){
     return crel ('div',
-    renderPlace)
+    'renderPlace')
 }
-module.exports = renderPlace
+module.exports = renderPlaces
 
-
+/*
 
 varriablen voor tabeltop zijn niet correct . ik krijg mijn DIv met elementen te zien .  maar eenmaal ik date erin steek  worden dezen niet weer gegeven.
 nav wat zitten kijken wat ik kon veranderen van namen , zonder succes
@@ -48,5 +47,5 @@ nav wat zitten kijken wat ik kon veranderen van namen , zonder succes
 "renderPlaces blijft niet herkend"
 
 
-
+na het improteren van componenten is "place" niet defined 
 */
