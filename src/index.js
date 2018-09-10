@@ -8,7 +8,7 @@ tabletop.init({
 callback: function (tabletopData, tabletop) {
   
   var renderedPlaces = render(tabletopData)
-console.log(renderedPlaces)
+console.log(tabletopData)
   document.body.appendChild(renderedPlaces)
 },
    

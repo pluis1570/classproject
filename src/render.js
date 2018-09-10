@@ -28,9 +28,9 @@ module.exports = renderApp*/
 
 function renderPlace(place){
     return crel('div',
-    crel('h1', place.area),
+    crel('h1', place.Area),
     crel ('img',{'src': place.Image}),
-    crel('p', place.information)
+    crel('p', place.Information)
     )
 }
 function renderPlaces (places){
